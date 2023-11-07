@@ -6,7 +6,9 @@ const MovieCard = ({ movie }) => {
     <div className="movie-card">
       {movie.poster_path ? (
         <img src={`${IMAGE_PATH}${movie.poster_path}`} />
-      ) : null}
+      ) : (
+        <div className="text-black bg-white min-h-[359px]">No Image Found</div>
+      )}
       <h5>{movie.title}</h5>
     </div>
   );

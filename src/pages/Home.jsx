@@ -37,13 +37,16 @@ const Home = () => {
   return (
     <div>
       <header>
-        <form onSubmit={searchMovies}>
-          <input type="text" onChange={(e) => setSearchKey(e.target.value)} />
-          <button type="submit">Search</button>
-        </form>
+        <div className="flex justify-between items-center max-w-screen-lg ml-auto mr-auto p-4">
+          <h1 className="text-2xl font-bold">Trail Mix</h1>
+          <form onSubmit={searchMovies}>
+            <input type="text" onChange={(e) => setSearchKey(e.target.value)} />
+            <button type="submit">Search</button>
+          </form>
+        </div>
       </header>
 
-      <div className="max-w-screen-lg ml-auto mr-auto grid grid-cols-4 gap-4">
+      <div className="grid grid-cols-4 gap-4 bg-[#0F1014] p-4">
         {renderMovies()}
       </div>
     </div>
