@@ -1,10 +1,11 @@
 import Sidebar from "./components/Sidebar";
+import Home from "./pages/Home";
 
 export default function App() {
   return (
     <div className="flex flex-row">
       <Sidebar />
-      <h1>Homepage</h1>
+      <Home />
     </div>
   );
 }

@@ -42,7 +42,7 @@ const Sidebar = () => {
           {Menus.map((menu, index) => (
             <li
               key={index}
-              className="text-gray-300 text-lg flex items-center mt-3 p-2 gap-x-4 hover:bg-neutral-800 rounded-md"
+              className="text-gray-300 text-lg flex items-center mt-3 p-2 gap-x-4 cursor-pointer hover:bg-neutral-800 rounded-md"
             >
               <span className="text-2xl text-red-50">{menu.icn}</span>
               <span className={`${!open && "hidden"}`}>{menu.title}</span>
