@@ -14,11 +14,11 @@ const Sidebar = () => {
   ];
 
   return (
-    <div className="flex">
+    <div className="flex ">
       <div
         className={`${
           open ? "w-56" : "w-20"
-        } duration-300 h-auto bg-neutral-900 relative p-5 pt-16`}
+        } duration-300 relative bg-neutral-900 p-5 pt-16`}
       >
         <FiArrowLeftCircle
           className={`absolute cursor-pointer top-5 left-3 text-xl text-white
