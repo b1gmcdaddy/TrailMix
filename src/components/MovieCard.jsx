@@ -1,9 +1,9 @@
 import React from "react";
 
-const MovieCard = ({ movie }) => {
+const MovieCard = ({ movie, selectMovie }) => {
   const IMAGE_PATH = "https://image.tmdb.org/t/p/w500";
   return (
-    <div className="movie-card">
+    <div className="movie-card" onClick={() => selectMovie(movie)}>
       {movie.poster_path ? (
         <img src={`${IMAGE_PATH}${movie.poster_path}`} />
       ) : (

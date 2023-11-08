@@ -29,7 +29,9 @@ const Home = () => {
   }, []);
 
   const renderMovies = () => {
-    return movies.map((movie) => <MovieCard key={movie.id} movie={movie} />);
+    return movies.map((movie) => (
+      <MovieCard key={movie.id} movie={movie} selectMovie={setSelectedMovie} />
+    ));
   };
 
   const searchMovies = (e) => {
